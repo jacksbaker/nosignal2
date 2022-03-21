@@ -18,7 +18,7 @@ public class PM : MonoBehaviour
     //[SerializeField] private float jumpCounter = 0f;
     public bool canDoubleJump = false;
 
-    private bool facingRight = true;
+    public bool facingRight = true;
 
     static public bool speedBuff;
     static public bool slowness;
