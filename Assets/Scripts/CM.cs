@@ -21,14 +21,14 @@ public class CM : MonoBehaviour
     {
         if(trigger.GetComponent<CamMovementActivation>().cam == true && player.GetComponent<PM>().facingRight == true)
         {
-            Debug.Log("move cam");
-            transform.position += new Vector3(0.039f, 0f, 0f);
+            
+            transform.position += new Vector3(0.069f, 0f, 0f);
         }
 
         if (trigger.GetComponent<CamMovementActivation>().cam == true && player.GetComponent<PM>().facingRight != true)
         {
-            Debug.Log("move cam");
-            transform.position += new Vector3(-0.039f, 0f, 0f);
+            
+            transform.position += new Vector3(-0.069f, 0f, 0f);
         }
     }
 }
