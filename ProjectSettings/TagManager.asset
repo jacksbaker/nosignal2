@@ -44,3 +44,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Pillar
+    uniqueID: 1253820941
+    locked: 0
+  - name: Ground
+    uniqueID: 4176045011
+    locked: 0
+  - name: pLAYER
+    uniqueID: 2166076881
+    locked: 0
+  - name: Mist
+    uniqueID: 4267444591
+    locked: 0

@@ -31,11 +31,15 @@ public class PM : MonoBehaviour
 
     public float stopwatch;
 
+    public bool spin;
+
+    private float stopwatch2;
 
 
 
 
-    //private enum MovementState { idle, running, jumping }
+
+    private enum MovementState { idle, running, jumping, falling, spinleft }
 
 
     // Start is called before the first frame update
@@ -77,6 +81,8 @@ public class PM : MonoBehaviour
     {
 
         stopwatch -= Time.deltaTime;
+        stopwatch2 -= Time.deltaTime;
+
 
         if (Input.GetKeyDown(KeyCode.Q))
         {
@@ -134,6 +140,18 @@ public class PM : MonoBehaviour
             //jumpCounter = 0;
         }
 
+        if(Input.GetKeyDown("b"))
+        {
+            //Debug.Log("spin");
+            spin = true;
+            stopwatch2 = 3f;
+        }
+
+        else if(stopwatch2 <= 0)
+        {
+            spin = false;
+        }
+
 
         UpdateAnimationUpdate();
     }
@@ -141,11 +159,11 @@ public class PM : MonoBehaviour
 
     private void UpdateAnimationUpdate()
     {
-        //MovementState state;
+        MovementState state;
 
         if (dirX > 0f)
         {
-            //state = MovementState.running;
+            state = MovementState.running;
 
             if (!facingRight)
             {
@@ -156,7 +174,7 @@ public class PM : MonoBehaviour
 
         else if (dirX < 0f)
         {
-            //state = MovementState.running;
+            state = MovementState.running;
             //Debug.Log("Running");
 
 
@@ -168,17 +186,33 @@ public class PM : MonoBehaviour
 
         else
         {
-            //Debug.Log("Idle");
-            //state = MovementState.idle;
+            Debug.Log("Idle");
+            state = MovementState.idle;
         }
 
         if (rb.velocity.y > .1f)
         {
-            //state = MovementState.jumping;
+            state = MovementState.jumping;
         }
 
+        else if (rb.velocity.y < -.1f)
+        {
+            state = MovementState.falling;
+        }
 
-        //anim.SetInteger("state", (int)state);
+        if(spin == true)
+        {
+            Debug.Log("spin");
+            state = MovementState.spinleft;
+        }
+
+        //else if (facingRight && (Input.GetKey("b")))
+        //{
+        //    state = MovementState.spinright;
+        //}
+
+
+        anim.SetInteger("state", (int)state);
 
     }
 
