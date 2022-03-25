@@ -39,7 +39,7 @@ public class PM : MonoBehaviour
 
 
 
-    private enum MovementState { idle, running, jumping, falling, spinleft }
+    private enum MovementState { idle, running, jumping, falling, spinleft, speed }
 
 
     // Start is called before the first frame update
@@ -88,7 +88,7 @@ public class PM : MonoBehaviour
         {
 
             superSpeed = true;
-            stopwatch = 5;
+            stopwatch = 1;
 
         }
 
@@ -204,6 +204,11 @@ public class PM : MonoBehaviour
         {
             Debug.Log("spin");
             state = MovementState.spinleft;
+        }
+
+        if(superSpeed == true)
+        {
+            state = MovementState.speed;
         }
 
         //else if (facingRight && (Input.GetKey("b")))
