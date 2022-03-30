@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelToLoad : MonoBehaviour
+public class LoadLevel : MonoBehaviour
 {
     public string levelToLoad;
 

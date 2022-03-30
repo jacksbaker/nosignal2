@@ -369,7 +369,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 150991579}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd354b7cb9306434c90280a1fa91d12e, type: 3}
+  m_Script: {fileID: 11500000, guid: 1735b9abd53d9e34cb295ab6b65c6165, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!61 &150991582
@@ -672,6 +672,7 @@ GameObject:
   - component: {fileID: 914303429}
   - component: {fileID: 914303430}
   - component: {fileID: 914303431}
+  - component: {fileID: 914303432}
   m_Layer: 0
   m_Name: Object
   m_TagString: FallingObject
@@ -819,6 +820,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &914303432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914303425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d44e85243a50264d89f4341097364ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stopwatch: 0
 --- !u!1 &1034598945
 GameObject:
   m_ObjectHideFlags: 0
