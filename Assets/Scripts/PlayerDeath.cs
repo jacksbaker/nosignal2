@@ -22,7 +22,7 @@ public class PlayerDeath : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "FallingObject")
+        if (collision.tag == "FallingObject" || collision.tag == "Spike")
         {
             gameObject.SetActive(false);
         }
