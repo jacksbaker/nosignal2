@@ -8,6 +8,7 @@ TagManager:
   - GM
   - FallingObject
   - Spike
+  - Boulder
   layers:
   - Default
   - TransparentFX

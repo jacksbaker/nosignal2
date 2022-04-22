@@ -15,7 +15,7 @@ public class Parallax : MonoBehaviour
     void Start()
     {
         startpos = transform.position.x;
-        length = GetComponent<SpriteRenderer>().bounds.size.x;
+       //length = GetComponent<SpriteRenderer>().bounds.size.x;
     }
 
     // Update is called once per frame
@@ -26,7 +26,7 @@ public class Parallax : MonoBehaviour
 
         transform.position = new Vector3(startpos + dist, transform.position.y, transform.position.z);
 
-        if (temp > startpos + length) startpos += length;
-        else if (temp < startpos - length) startpos -= length;
+        //if (temp > startpos + length) startpos += length;
+        //else if (temp < startpos - length) startpos -= length;
     }
 }

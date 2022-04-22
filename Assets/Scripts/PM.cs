@@ -186,7 +186,7 @@ public class PM : MonoBehaviour
 
         else
         {
-            Debug.Log("Idle");
+            //Debug.Log("Idle");
             state = MovementState.idle;
         }
 
