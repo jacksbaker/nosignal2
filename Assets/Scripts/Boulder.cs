@@ -13,10 +13,12 @@ public class Boulder : MonoBehaviour
 
     public float moveSpeed = 7f;
 
-    [SerializeField] private LayerMask jumpableGround;
+    [SerializeField] private LayerMask ground;
 
     private Rigidbody2D rb;
     private CircleCollider2D coll;
+
+   
 
 
     // Start is called before the first frame update
@@ -56,18 +58,18 @@ public class Boulder : MonoBehaviour
             gravity.gravityScale = 1;
         }
 
-        else if(IsGrounded())
+        else if (isBoulderTrue == true && stopwatch <= 0 )
         {
             rb.velocity = new Vector2(5 * moveSpeed, rb.velocity.y);
         }
+
+
+
+            
+        
     }
 
 
-    private bool IsGrounded()
-    {
-        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
-
-
-    }
+   
 
 }
