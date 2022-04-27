@@ -56,23 +56,6 @@ public class PM : MonoBehaviour
         speedBuff = false;
         slowness = false;
 
-        //part.Play();
-
-        //jumpCounter = 0;
-
-        /*
-        if (!playerExists)
-        {
-            playerExists = true;
-            DontDestroyOnLoad(transform.gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-
-
-        }
-        */
 
     }
 

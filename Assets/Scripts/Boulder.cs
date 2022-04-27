@@ -58,10 +58,7 @@ public class Boulder : MonoBehaviour
             gravity.gravityScale = 1;
         }
 
-        else if (isBoulderTrue == true && stopwatch <= 0 )
-        {
-            rb.velocity = new Vector2(5 * moveSpeed, rb.velocity.y);
-        }
+        
 
 
 
@@ -69,7 +66,10 @@ public class Boulder : MonoBehaviour
         
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        rb.velocity = new Vector2(5 * moveSpeed, rb.velocity.y);
+    }
 
-   
 
 }
