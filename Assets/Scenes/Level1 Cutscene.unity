@@ -5848,11 +5848,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 21512778}
   sentences:
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Sam is epic
+  - Sam is wise
+  - Sam is cool
+  - Sam is awesome
+  - Sam is sam
   typingSpeed: 0
 --- !u!4 &1327394093
 Transform:

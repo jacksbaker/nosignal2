@@ -12,7 +12,7 @@ public class DialogActivation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        dialogManager.SetActive(false);
+        //dialogManager.SetActive(false);
         text.SetActive(false);
         continueText.SetActive(false);
     }
