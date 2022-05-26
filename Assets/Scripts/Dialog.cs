@@ -10,9 +10,26 @@ public class Dialog : MonoBehaviour
     private int index;
     public float typingSpeed;
 
+    public string levelToLoad;
+
+    public string exitPoint;
+
+    private PM thePlayer;
+
+    public string Test { get; private set; }
+
     void Start()
     {
         StartCoroutine(Type());
+    }
+
+    void Update()
+    {
+        if(index == 4)
+        {
+            Application.LoadLevel(levelToLoad);
+            thePlayer.startPoint = exitPoint;
+        }
     }
 
     IEnumerator Type()

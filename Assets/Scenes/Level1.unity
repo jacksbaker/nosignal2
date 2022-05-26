@@ -1686,6 +1686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dedc667468225184bb6bcbc1eb9a28ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelToLoad: 
   stopwatch: 0
 --- !u!61 &349940946
 BoxCollider2D:
@@ -1975,7 +1976,7 @@ TilemapRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 1.1518326, y: 7.7442513, z: 0}
+  m_ChunkCullingBounds: {x: 1.261955, y: 8.293872, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -6193,7 +6194,7 @@ TilemapRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0.03333336, y: 0.03333336, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -7855,6 +7856,8 @@ MonoBehaviour:
   - sam is epic
   - sam is epic
   typingSpeed: 0
+  levelToLoad: 
+  exitPoint: 
 --- !u!4 &1864211289
 Transform:
   m_ObjectHideFlags: 0

@@ -5,6 +5,8 @@ using UnityEngine;
 public class PlayerDeath : MonoBehaviour
 {
 
+    public string levelToLoad;
+
     public float stopwatch;
     
     // Start is called before the first frame update
@@ -25,6 +27,8 @@ public class PlayerDeath : MonoBehaviour
         if (collision.tag == "FallingObject" || collision.tag == "Spike")
         {
             gameObject.SetActive(false);
+            Application.LoadLevel(levelToLoad);
+
         }
     }
 
