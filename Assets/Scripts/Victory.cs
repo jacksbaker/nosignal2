@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class Back1 : MonoBehaviour
+public class Victory : MonoBehaviour
 {
+
+    public string levelToLoad;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,13 +19,14 @@ public class Back1 : MonoBehaviour
         
     }
 
-    public void Back()
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        Application.LoadLevel("MainMenu");
+        if (collision.tag == "Player")
+        {
+            
+            Application.LoadLevel(levelToLoad);
+
+        }
     }
 
-    public void Quit()
-    {
-        Apllication.Quit();
-    }
 }

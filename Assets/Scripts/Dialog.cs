@@ -25,10 +25,10 @@ public class Dialog : MonoBehaviour
 
     void Update()
     {
-        if(index == 4)
+        if(index == 2)
         {
             Application.LoadLevel(levelToLoad);
-            thePlayer.startPoint = exitPoint;
+            
         }
     }
 

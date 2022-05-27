@@ -1742,7 +1742,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!212 &344284925
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1847,7 +1847,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelToLoad: Level2
-  exitPoint: StartPoint
 --- !u!95 &344284929
 Animator:
   serializedVersion: 3
@@ -1931,6 +1930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dedc667468225184bb6bcbc1eb9a28ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelToLoad: 
   stopwatch: 0
 --- !u!61 &349940946
 BoxCollider2D:
@@ -2022,7 +2022,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -2422,7 +2422,7 @@ TilemapRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 1.1518326, y: 7.7442513, z: 0}
+  m_ChunkCullingBounds: {x: 1.261955, y: 8.293872, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -5925,11 +5925,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 21512778}
   sentences:
-  - Sam is epic
-  - Sam is wise
-  - Sam is cool
-  - Sam is awesome
-  - Sam is sam
+  - Do you wish to escape?
+  - I can give you the power to do so
+  - '                                             d'
   typingSpeed: 0
   levelToLoad: Level2
   exitPoint: StartPoint
@@ -7708,7 +7706,7 @@ TilemapRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0.03333336, y: 0.03333336, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0

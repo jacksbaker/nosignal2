@@ -31,5 +31,15 @@ public class MainMenu2 : MonoBehaviour
         Application.Quit();
     }
 
+    public void Back()
+    {
+        Application.LoadLevel("MainMenu");
+    }
+
+    public void Controls()
+    {
+        Application.LoadLevel("Controls");
+    }
+
 
 }
